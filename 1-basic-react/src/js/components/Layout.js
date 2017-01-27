@@ -16,10 +16,12 @@ export default class Layout extends React.Component {
   }
 
   render() {
+	const name = 'Tian';
     return (
       <div>
         <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
         <Footer />
+		<h1>{name}</h1>
       </div>
     );
   }
